@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Mohanad/IdeaProjects/TestNgBasicBatch11">
+        <classes>
+            <class name="class1.BeforeClassAndAfterClass">
+                <methods>
+                    <include name="thirdTest"/>
+                    <include name="secondTest"/>
+                    <include name="firstTest"/>
+                </methods>
+            </class>
+            <class name="class1.FirstExample">
+                <methods>
+                    <include name="thirdTest"/>
+                    <include name="secondTest"/>
+                    <include name="firstTest"/>
+                </methods>
+            </class>
+            <class name="class1.PreconditionAndPostCondition">
+                <methods>
+                    <include name="test"/>
+                    <include name="anotherTest"/>
+                </methods>
+            </class>
+            <class name="class2.DependsOn">
+                <methods>
+                    <include name="login"/>
+                    <include name="verificationOfDashboard"/>
+                </methods>
+            </class>
+            <class name="class2.EnableAndDisable">
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="secondTest"/>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+            <class name="class2.HardAssertion">
+                <methods>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="class2.LoginTest">
+                <methods>
+                    <include name="adminLogin"/>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="class2.Priority">
+                <methods>
+                    <include name="adminLogin"/>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="class2.PriorityClass">
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="secondTest"/>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
